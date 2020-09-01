@@ -1,5 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
+body {
+  margin: 0;
+  background-color: #ffffff;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+}
+.screen-reader {
+  position: absolute;
+  left: -100vw;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 150px;
+}
+.header__menu {
+  list-style: none;
+  display: flex;
+}
+.header__menu__item {
+  margin-right: 40px;
+}
+.header__menu__link {
+  font-size: 14px;
+  color: hsl(229, 31%, 21%);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+.header__menu__link__button {
+  color: #ffffff;
+  background: hsl(0, 94%, 66%);
+  border-radius: 5px;
+  padding: 10px 30px;
+}
+
 /* Attribution Section */
 .attribution {
   font-size: 11px;
