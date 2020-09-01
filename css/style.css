@@ -34,11 +34,21 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.07em;
 }
+.header__menu__link:hover,
+.header__menu__link:focus {
+  color: hsl(0, 94%, 66%);
+}
 .header__menu__link__button {
   color: #ffffff;
   background: hsl(0, 94%, 66%);
+  border: 2px solid hsl(0, 94%, 66%);
   border-radius: 5px;
   padding: 10px 30px;
+}
+.header__menu__link__button:hover,
+.header__menu__link__button:focus {
+  color: hsl(0, 94%, 66%);
+  background: #ffffff;
 }
 
 /* Attribution Section */
