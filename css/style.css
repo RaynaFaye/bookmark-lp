@@ -17,6 +17,25 @@ body {
 .logo-block {
   display: flex;
 }
+/* Common menu styles for header and footer nav bar */
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+.menu__item {
+  margin-right: 40px;
+}
+.menu__link {
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+.menu__link:hover,
+.menu__link:focus {
+  color: hsl(0, 94%, 66%);
+}
 /* Header Section */
 .header {
   display: flex;
@@ -24,24 +43,8 @@ body {
   align-items: center;
   padding: 50px 150px;
 }
-.header__menu {
-  list-style: none;
-  display: flex;
-  margin: 0;
-}
-.header__menu__item {
-  margin-right: 40px;
-}
 .header__menu__link {
-  font-size: 14px;
   color: hsl(229, 31%, 21%);
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-}
-.header__menu__link:hover,
-.header__menu__link:focus {
-  color: hsl(0, 94%, 66%);
 }
 .header__menu__link__button {
   color: #ffffff;
@@ -69,20 +72,10 @@ body {
   align-items: center;
 }
 .footer__menu {
-  list-style: none;
-  display: flex;
-  margin: 0;
   padding-left: 50px;
 }
-.footer__menu__item {
-  margin-right: 40px;
-}
 .footer__menu__link {
-  font-size: 14px;
   color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
 }
 .footer__social-links {
   list-style: none;
@@ -92,6 +85,10 @@ body {
 }
 .footer__social-link {
   margin-right: 40px;
+}
+.footer__social-link svg:hover path,
+.footer__social-link:focus svg path {
+  fill: hsl(0, 94%, 66%);
 }
 /* Attribution Section */
 .attribution {
