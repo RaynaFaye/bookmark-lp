@@ -11,7 +11,7 @@
   </head>
   <body>
     <header class="header">
-      <div>
+      <div class="logo-block">
         <img src="images/logo-bookmark.svg" alt="Bookmark" />
       </div>
       <nav>
@@ -152,20 +152,22 @@
         <input type="submit" value="Contact Us" />
       </form>
     </section>
-    <footer>
-      <div>
-        <img src="images/logo-bookmark.svg" alt="" />
+    <footer class="footer">
+      <div class="footer__logo-menu-block">
+        <div class="logo-block">
+          <img src="images/logo-bookmark-footer.svg" alt="" />
+        </div>
+        <nav>
+          <ul class="footer__menu">
+            <li class="footer__menu__item"><a href="" class="footer__menu__link">Features</a></li>
+            <li class="footer__menu__item"><a href="" class="footer__menu__link">Pricing</a></li>
+            <li class="footer__menu__item"><a href="" class="footer__menu__link">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="">Features</a></li>
-          <li><a href="">Pricing</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
-      <ul>
+      <ul class="footer__social-links">
         <li>
-          <a href="" aria-label="Access our facebook">
+          <a href="" aria-label="Access our facebook" class="footer__social-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
               <path
                 fill="#FFF"
@@ -176,7 +178,7 @@
           </a>
         </li>
         <li>
-          <a href="" aria-label="Access our twitter">
+          <a href="" aria-label="Access our twitter" class="footer__social-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
               <path
                 fill="#FFF"

@@ -14,15 +14,20 @@ body {
   height: 1px;
   overflow: hidden;
 }
+.logo-block {
+  display: flex;
+}
 /* Header Section */
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 50px 150px;
 }
 .header__menu {
   list-style: none;
   display: flex;
+  margin: 0;
 }
 .header__menu__item {
   margin-right: 40px;
@@ -50,12 +55,52 @@ body {
   color: hsl(0, 94%, 66%);
   background: #ffffff;
 }
-
+/* Footer Section */
+.footer {
+  background-color: hsl(229, 31%, 21%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 150px 10px;
+}
+.footer__logo-menu-block {
+  display: flex;
+  align-items: center;
+}
+.footer__menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding-left: 50px;
+}
+.footer__menu__item {
+  margin-right: 40px;
+}
+.footer__menu__link {
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+.footer__social-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.footer__social-link {
+  margin-right: 40px;
+}
 /* Attribution Section */
 .attribution {
   font-size: 11px;
   text-align: center;
+  flex-basis: 100%;
+  margin-top: 40px;
+  color: #ffffff;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #ffffff;
 }
