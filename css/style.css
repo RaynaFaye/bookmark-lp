@@ -28,6 +28,11 @@ body {
   padding: 10px 20px;
   cursor: pointer;
 }
+.button:hover,
+.button:focus {
+  background-color: #ffffff;
+  color: hsl(231, 69%, 60%);
+}
 /* Common menu styles for header and footer nav bar */
 .menu {
   list-style: none;
@@ -92,6 +97,11 @@ body {
   color: hsl(229, 31%, 21%);
   border: 2px solid hsl(0, 0%, 93%);
   margin-left: 10px;
+}
+.intro__firefox-button:hover,
+.intro__firefox-button:focus {
+  background-color: #ffffff;
+  border: 2px solid hsl(229, 31%, 21%);
 }
 /* Footer Section */
 .footer {
