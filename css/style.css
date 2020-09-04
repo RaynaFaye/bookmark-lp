@@ -144,6 +144,11 @@ body {
   font-size: 34px;
   padding: 0 75px;
 }
+.contact__input-block {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+}
 .contact__input {
   color: hsl(229, 31%, 21%);
   background: #ffffff;
@@ -155,7 +160,41 @@ body {
   font-size: 14px;
   box-sizing: border-box;
   width: 24vw;
-  margin-right: 10px;
+}
+.contact__input.incorrect {
+  border: 2px solid hsl(0, 94%, 66%);
+  border-radius: 5px 5px 0 0;
+}
+.contact__error-icon {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.contact__messages {
+  display: grid;
+}
+.contact__message {
+  visibility: hidden;
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: italic;
+  text-align: left;
+  padding: 5px;
+  border-radius: 0 0 5px 5px;
+  margin: 0;
+}
+.contact__error-message {
+  background: hsl(0, 94%, 66%);
+  color: #ffffff;
+  border: 2px solid hsl(0, 94%, 66%);
+}
+.contact__sent-message {
+  background: #ffffff;
+  color: hsl(229, 31%, 21%);
+  border: 2px solid #ffffff;
 }
 .contact__submit-button {
   color: #ffffff;
@@ -166,6 +205,13 @@ body {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
   font-size: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.contact__submit-button:hover,
+.contact__submit-button:focus {
+  color: hsl(0, 94%, 66%);
+  background: #ffffff;
 }
 
 /* Footer Section */

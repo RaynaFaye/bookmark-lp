@@ -149,7 +149,14 @@
       <h2 class="contact__title">Stay up-to-date with what we’re doing</h2>
       <form action="">
         <label for="email" class="screen-reader">Email Address:</label>
-        <input type="text" id="email" name="email" placeholder="Enter your email address" class="contact__input" />
+        <div class="contact__input-block">
+          <input type="text" id="email" name="email" placeholder="Enter your email address" class="contact__input" />
+          <span class="contact__error-icon"><img src="images/icon-error.svg" alt="" /></span>
+          <div class="contact__messages">
+            <p class="contact__message contact__error-message">Whoops, make sure it's an email.</p>
+            <p class="contact__message contact__sent-message">Your email address has been sent.</p>
+          </div>
+        </div>
         <input type="submit" value="Contact Us" class="contact__submit-button" />
       </form>
     </section>
