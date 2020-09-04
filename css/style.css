@@ -192,9 +192,9 @@ body {
   border: 2px solid hsl(0, 94%, 66%);
 }
 .contact__sent-message {
-  background: #ffffff;
-  color: hsl(229, 31%, 21%);
-  border: 2px solid #ffffff;
+  background: #106527;
+  color: #ffffff;
+  border: 2px solid #106527;
 }
 .contact__submit-button {
   color: #ffffff;
