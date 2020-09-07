@@ -167,6 +167,35 @@ body {
   border-bottom: 1px solid hsl(0, 94%, 66%);
   box-shadow: inset 0 -5px 0 hsl(0, 94%, 66%);
 }
+.features__facts {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+.features__fact {
+  grid-column: 1;
+  grid-row: 1;
+  display: none;
+  grid-template-columns: 570px 1fr;
+  grid-gap: 125px;
+  align-items: center;
+}
+.features__current__fact {
+  display: grid;
+}
+.features__fact__image {
+  width: 100%;
+}
+.features__fact__title {
+  color: hsl(229, 31%, 21%);
+  font-weight: 500;
+  font-size: 30px;
+  margin: 0;
+}
+.features__fact__paragraph {
+  color: hsl(229, 8%, 60%);
+  margin: 25px 0;
+}
 /* Contact Section */
 .contact {
   background: hsl(231, 69%, 60%);
