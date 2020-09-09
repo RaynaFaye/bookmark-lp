@@ -125,7 +125,7 @@ body {
 }
 /* Features section */
 .features {
-  padding: 50px 150px 100px;
+  padding: 50px 150px;
   position: relative;
 }
 .features__intro {
@@ -191,7 +191,13 @@ body {
 .features__current-fact {
   display: grid;
 }
+.features__image-block {
+  justify-content: flex-end;
+}
 .features__fact__image {
+  height: 420px;
+}
+#fact-one .features__fact__image {
   width: 100%;
 }
 .features__fact__title {
@@ -205,8 +211,8 @@ body {
   margin: 25px 0;
 }
 .background-blue-block-left {
-  height: 390px;
-  width: 44vw;
+  height: 375px;
+  width: 40vw;
   background: hsl(231, 69%, 60%);
   border-bottom-right-radius: 40%;
   position: absolute;
