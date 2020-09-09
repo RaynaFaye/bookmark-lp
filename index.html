@@ -48,17 +48,17 @@
       <div>
         <ul class="features__buttons">
           <li>
-            <button class="features__button features__current-button">Simple Bookmarking</button>
+            <button class="features__button features__current-button" aria-controls="fact-one" aria-expanded="true">Simple Bookmarking</button>
           </li>
           <li>
-            <button class="features__button">Speedy Searching</button>
+            <button class="features__button" aria-controls="fact-two" aria-expanded="false">Speedy Searching</button>
           </li>
           <li>
-            <button class="features__button">Easy Sharing</button>
+            <button class="features__button" aria-controls="fact-three" aria-expanded="false">Easy Sharing</button>
           </li>
         </ul>
         <div class="features__facts">
-          <div class="features__fact features__current__fact">
+          <div class="features__fact features__current-fact" id="fact-one">
             <div class="image-block">
               <img src="images/illustration-features-tab-1.svg" alt="" class="features__fact__image" />
             </div>
@@ -71,7 +71,7 @@
               <button class="button">More Info</button>
             </div>
           </div>
-          <div class="features__fact">
+          <div class="features__fact" id="fact-two">
             <div class="image-block">
               <img src="images/illustration-features-tab-2.svg" alt="" class="features__fact__image" />
             </div>
@@ -83,7 +83,7 @@
               <button class="button">More Info</button>
             </div>
           </div>
-          <div class="features__fact">
+          <div class="features__fact" id="fact-three">
             <div class="image-block">
               <img src="images/illustration-features-tab-3.svg" alt="" class="features__fact__image" />
             </div>

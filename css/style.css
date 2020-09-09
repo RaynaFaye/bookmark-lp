@@ -188,7 +188,7 @@ body {
   grid-gap: 125px;
   align-items: center;
 }
-.features__current__fact {
+.features__current-fact {
   display: grid;
 }
 .features__fact__image {
