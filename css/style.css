@@ -138,6 +138,7 @@ body {
   font-weight: 500;
   color: hsl(229, 31%, 21%);
   grid-column: 2;
+  margin: 10px 0;
 }
 .features__paragraph {
   color: hsl(229, 8%, 60%);
@@ -219,6 +220,27 @@ body {
   left: 0;
   bottom: 0;
   z-index: -1;
+}
+/* Download section */
+.download {
+  padding: 50px 150px;
+}
+.download__intro {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.download__title {
+  font-size: 30px;
+  font-weight: 500;
+  color: hsl(229, 31%, 21%);
+  grid-column: 2;
+  margin: 10px 0;
+}
+.download__paragraph {
+  color: hsl(229, 8%, 60%);
+  grid-column: 2;
+  margin: 15px 25px;
 }
 /* Contact Section */
 .contact {
