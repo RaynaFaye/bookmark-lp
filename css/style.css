@@ -223,7 +223,7 @@ body {
 }
 /* Download section */
 .download {
-  padding: 50px 150px;
+  padding: 150px;
 }
 .download__intro {
   text-align: center;
@@ -240,7 +240,51 @@ body {
 .download__paragraph {
   color: hsl(229, 8%, 60%);
   grid-column: 2;
-  margin: 15px 25px;
+  margin: 15px;
+}
+.download__boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: repeat(2, 35px) auto repeat(2, 35px);
+  grid-column-gap: 35px;
+  justify-content: center;
+  margin-top: 50px;
+}
+.download__box__chrome {
+  grid-column: 1;
+  grid-row: 1 / 4;
+}
+.download__box__firefox {
+  grid-column: 2;
+  grid-row: 2 / 5;
+}
+.download__box__opera {
+  grid-column: 3;
+  grid-row: 3 / 6;
+}
+.download__box {
+  text-align: center;
+  padding: 30px 25px 25px;
+  border-radius: 10px;
+  box-shadow: 0px 15px 2rem -1rem hsl(229, 8%, 60%);
+}
+.download__box__title {
+  font-weight: 500;
+  font-size: 20px;
+  color: hsl(229, 31%, 21%);
+  margin: 30px 0 0 0;
+}
+.download__box__text {
+  font-weight: 400;
+  font-size: 14px;
+  color: hsl(229, 8%, 60%);
+  margin: 10px 0;
+}
+.download__dots {
+  height: 4px;
+  width: 130%;
+  margin: 35px -25px 25px;
+  background: url(../images/bg-dots.svg);
 }
 /* Contact Section */
 .contact {
