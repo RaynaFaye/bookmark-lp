@@ -105,6 +105,7 @@ body {
 .intro__firefox-button:hover,
 .intro__firefox-button:focus {
   background-color: #ffffff;
+  color: hsl(229, 31%, 21%);
   border: 2px solid hsl(229, 31%, 21%);
 }
 .intro__image-block {
