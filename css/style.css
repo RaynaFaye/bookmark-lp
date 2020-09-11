@@ -287,6 +287,32 @@ body {
   margin: 35px -25px 25px;
   background: url(../images/bg-dots.svg);
 }
+/* FAQ section */
+.faq {
+  padding: 50px 150px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.faq > * {
+  grid-column: 2;
+}
+.faq__title {
+  font-size: 30px;
+  font-weight: 500;
+  color: hsl(229, 31%, 21%);
+  margin: 10px 0;
+  text-align: center;
+}
+.faq__paragraph {
+  color: hsl(229, 8%, 60%);
+  grid-column: 2;
+  margin: 15px 15px 50px 15px;
+  text-align: center;
+}
+.faq__button {
+  margin-top: 50px;
+  justify-self: center;
+}
 /* Contact Section */
 .contact {
   background: hsl(231, 69%, 60%);
