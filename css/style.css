@@ -142,6 +142,7 @@ body {
   margin: 10px 0;
 }
 .features__paragraph {
+  line-height: 1.5;
   color: hsl(229, 8%, 60%);
   grid-column: 2;
   margin: 15px;
@@ -209,6 +210,7 @@ body {
   margin: 0;
 }
 .features__fact__paragraph {
+  line-height: 1.5;
   color: hsl(229, 8%, 60%);
   margin: 25px 0;
 }
@@ -239,6 +241,7 @@ body {
   margin: 10px 0;
 }
 .download__paragraph {
+  line-height: 1.5;
   color: hsl(229, 8%, 60%);
   grid-column: 2;
   margin: 15px;
@@ -306,8 +309,42 @@ body {
 .faq__paragraph {
   color: hsl(229, 8%, 60%);
   grid-column: 2;
-  margin: 15px 15px 50px 15px;
+  margin: 0;
+  padding: 15px 15px 50px 15px;
+  border-bottom: 1px solid hsl(229, 8%, 60%);
   text-align: center;
+}
+.faq__details {
+  padding: 20px 20px 20px 0;
+  border-bottom: 1px solid hsl(229, 8%, 60%);
+}
+.faq__summary {
+  color: hsl(229, 31%, 21%);
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.faq__summary::-webkit-details-marker {
+  display: none;
+}
+.faq__summary:hover,
+.faq__summary:focus {
+  color: hsl(0, 94%, 66%);
+}
+.faq__details .faq__summary svg {
+  transition: all 0.5s;
+}
+.faq__details[open] .faq__summary svg {
+  transform: rotate(180deg);
+}
+.faq__details[open] .faq__summary svg path {
+  stroke: #fa5757;
+}
+.faq__text {
+  color: hsl(227, 7%, 41%);
+  line-height: 2;
+  font-size: 16px;
 }
 .faq__button {
   margin-top: 50px;
