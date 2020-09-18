@@ -501,7 +501,6 @@ body {
   .header__container {
     position: absolute;
     width: 100vw;
-    height: 100vh;
     z-index: 2;
   }
   .header {
@@ -509,6 +508,7 @@ body {
   }
   .header__container.open {
     background: rgba(37, 43, 70, 0.9);
+    height: 100vh;
   }
   .header__container.open .image-block svg path {
     fill: #ffffff;
@@ -586,6 +586,27 @@ body {
   }
   /* Intro Section */
   .intro {
-    padding: 150px 75px 50px 150px;
+    padding: 150px 25px 50px 25px;
+    flex-direction: column-reverse;
+  }
+  .intro {
+  }
+  .intro__text-block {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .intro__title {
+    font-size: 28px;
+  }
+  .intro__paragraph {
+    padding-right: 0;
+    margin: 20px 0 30px 0;
+    font-size: 16px;
+  }
+  .background-blue-block-right {
+    width: 75vw;
+    height: 185px;
+    bottom: 0;
+    top: 200px;
   }
 }
