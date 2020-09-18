@@ -589,8 +589,6 @@ body {
     padding: 150px 25px 50px 25px;
     flex-direction: column-reverse;
   }
-  .intro {
-  }
   .intro__text-block {
     text-align: center;
     margin-top: 50px;
@@ -608,5 +606,29 @@ body {
     height: 185px;
     bottom: 0;
     top: 200px;
+  }
+  /* Download section */
+  .download {
+    padding: 150px 25px;
+  }
+  .download__intro {
+    display: block;
+  }
+  .download__title {
+    font-size: 24px;
+  }
+  .download__paragraph {
+    font-size: 16px;
+    margin: 15px 0;
+  }
+  .download__boxes {
+    display: block;
+    margin: 50px 25px 0;
+  }
+  .download__box {
+    margin-bottom: 35px;
+  }
+  .download__dots {
+    width: 120%;
   }
 }
