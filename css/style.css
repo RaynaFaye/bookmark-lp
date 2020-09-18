@@ -631,4 +631,32 @@ body {
   .download__dots {
     width: 120%;
   }
+  /* Footer Section */
+  .footer {
+    padding: 35px 25px;
+    flex-direction: column;
+  }
+  .footer__logo-menu-block {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer .image-block {
+    margin-bottom: 12px;
+  }
+  .footer__menu {
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .footer__menu__item {
+    margin: 12px 0;
+  }
+  .footer__social-links {
+    margin-top: 25px;
+  }
+  .footer__social-link {
+    margin: 0;
+  }
+  .footer__social-link {
+    margin: 20px;
+  }
 }
