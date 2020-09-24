@@ -706,6 +706,32 @@ body {
   .faq__button {
     align-self: center;
   }
+  /* Contact Section */
+  .contact {
+    display: block;
+    padding: 50px 25px;
+  }
+  .contact__paragraph {
+    font-size: 16px;
+  }
+  .contact__title {
+    font-size: 24px;
+    padding: 0;
+  }
+  .contact__form {
+    margin-top: 50px;
+  }
+  .contact__input-block {
+    width: 100%;
+  }
+  .contact__input {
+    width: auto;
+  }
+  .contact__submit-button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
   /* Footer Section */
   .footer {
     padding: 35px 25px;
