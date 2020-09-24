@@ -607,9 +607,62 @@ body {
     bottom: 0;
     top: 200px;
   }
+  /* Features section */
+  .features {
+    padding: 50px 25px;
+  }
+  .features__intro {
+    display: block;
+  }
+  .features__title {
+    font-size: 24px;
+  }
+  .features__paragraph {
+    margin: 15px 0;
+    font-size: 16px;
+  }
+  .features__buttons {
+    margin: 50px 0 75px;
+  }
+  .features__buttons > li {
+    width: 100%;
+  }
+  .features__buttons > li:first-of-type {
+    border-top: 1px solid hsl(229, 8%, 60%);
+  }
+  .features__button {
+    width: 100%;
+  }
+  .features__facts {
+    display: block;
+  }
+  .features__current-fact {
+    display: block;
+  }
+  .features__fact__image {
+    height: auto;
+  }
+  .features__fact__title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 75px;
+  }
+  .features__fact__paragraph {
+    text-align: center;
+    font-size: 16px;
+    margin: 15px 0;
+  }
+  .features__more-button {
+    display: none;
+  }
+  .background-blue-block-left {
+    width: 75vw;
+    height: 185px;
+    bottom: 250px;
+  }
   /* Download section */
   .download {
-    padding: 150px 25px;
+    padding: 75px 25px 150px 25px;
   }
   .download__intro {
     display: block;
