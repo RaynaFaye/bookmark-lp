@@ -313,6 +313,7 @@ body {
   text-align: center;
 }
 .faq__paragraph {
+  line-height: 1.5;
   color: hsl(229, 8%, 60%);
   grid-column: 2;
   margin: 0;
@@ -662,7 +663,7 @@ body {
   }
   /* Download section */
   .download {
-    padding: 75px 25px 150px 25px;
+    padding: 75px 25px 75px 25px;
   }
   .download__intro {
     display: block;
@@ -683,6 +684,27 @@ body {
   }
   .download__dots {
     width: 120%;
+  }
+  /* FAQ section */
+  .faq {
+    padding: 50px 25px 125px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+  }
+  .faq__title {
+    font-size: 24px;
+    margin: 10px;
+  }
+  .faq__paragraph {
+    padding: 15px 0 50px;
+    border-bottom: none;
+  }
+  .faq__details {
+    padding: 20px 0;
+  }
+  .faq__button {
+    align-self: center;
   }
   /* Footer Section */
   .footer {
