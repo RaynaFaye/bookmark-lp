@@ -497,7 +497,62 @@ body {
 }
 
 /* Media Queries */
-@media all and (max-width: 440px) {
+@media all and (max-width: 1200px) {
+  /* Header Section */
+  .header {
+    padding: 50px;
+  }
+  /* Intro Section */
+  .intro {
+    padding: 50px;
+    align-items: start;
+  }
+  .intro__title {
+    font-size: 40px;
+  }
+  .background-blue-block-right {
+    height: 275px;
+  }
+  /* Features section */
+  .features {
+    padding: 50px;
+  }
+  .features__intro {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  .features__fact {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+  }
+  .background-blue-block-left {
+    height: 300px;
+  }
+  /* Download section */
+  .download {
+    padding: 150px 50px;
+  }
+  .download__intro {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  /* FAQ section */
+  .faq {
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 50px;
+  }
+  /* Contact Section */
+  .contact {
+    padding: 50px;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  .contact__title {
+    padding: 0;
+  }
+  /* Footer Section */
+  .footer {
+    padding: 50px 50px 10px;
+  }
+}
+@media all and (max-width: 844px) {
   /* Header Section */
   .header__container {
     position: absolute;
@@ -604,7 +659,7 @@ body {
   }
   .background-blue-block-right {
     width: 75vw;
-    height: 185px;
+    height: 385px;
     bottom: 0;
     top: 200px;
   }
@@ -658,8 +713,8 @@ body {
   }
   .background-blue-block-left {
     width: 75vw;
-    height: 185px;
-    bottom: 250px;
+    height: 385px;
+    bottom: 200px;
   }
   /* Download section */
   .download {
@@ -759,5 +814,33 @@ body {
   }
   .footer__social-link {
     margin: 20px;
+  }
+}
+@media all and (max-width: 610px) {
+  /* Intro Section */
+  .background-blue-block-right {
+    height: 325px;
+  }
+}
+@media all and (max-width: 568px) {
+  /* Intro Section */
+  .background-blue-block-right {
+    height: 250px;
+  }
+  /* Features section */
+  .background-blue-block-left {
+    height: 285px;
+    bottom: 225px;
+  }
+}
+@media all and (max-width: 440px) {
+  /* Intro Section */
+  .background-blue-block-right {
+    height: 185px;
+  }
+  /* Features section */
+  .background-blue-block-left {
+    height: 185px;
+    bottom: 250px;
   }
 }
