@@ -67,29 +67,31 @@ const menuBlock = headerContainer.querySelector('.header__menu');
 const menuLinks = headerContainer.querySelectorAll('.header__menu__link');
 const headerSocialLinks = headerContainer.querySelector('.header__mobile__social-links');
 
+function showMenu() {
+  headerContainer.classList.add('open');
+  menuBlock.style.display = 'flex';
+  headerSocialLinks.style.display = 'flex';
+  menuButtonImage.src = 'images/icon-close.svg';
+  menuButton.setAttribute('aria-expanded', 'true');
+}
+function hideMenu() {
+  headerContainer.classList.remove('open');
+  menuBlock.style.display = 'none';
+  headerSocialLinks.style.display = 'none';
+  menuButtonImage.src = 'images/icon-hamburger.svg';
+  menuButton.setAttribute('aria-expanded', 'false');
+}
 menuButton.addEventListener('click', function () {
   if (headerContainer.classList.contains('open')) {
-    headerContainer.classList.remove('open');
-    menuBlock.style.display = 'none';
-    headerSocialLinks.style.display = 'none';
-    menuButtonImage.src = 'images/icon-hamburger.svg';
-    menuButton.setAttribute('aria-expanded', 'false');
+    hideMenu();
   } else {
-    headerContainer.classList.add('open');
-    menuBlock.style.display = 'flex';
-    headerSocialLinks.style.display = 'flex';
-    menuButtonImage.src = 'images/icon-close.svg';
-    menuButton.setAttribute('aria-expanded', 'true');
+    showMenu();
   }
 });
 
 document.addEventListener('keyup', function () {
   if (headerContainer.classList.contains('open') && event.key === 'Escape') {
-    headerContainer.classList.remove('open');
-    menuBlock.style.display = 'none';
-    headerSocialLinks.style.display = 'none';
-    menuButtonImage.src = 'images/icon-hamburger.svg';
-    menuButton.setAttribute('aria-expanded', 'false');
+    hideMenu();
   }
 });
 
@@ -98,11 +100,7 @@ menuLinks.forEach((link) => {
     if (event.relatedTarget.classList.contains('header__menu__link')) {
       return;
     } else {
-      headerContainer.classList.remove('open');
-      menuBlock.style.display = 'none';
-      headerSocialLinks.style.display = 'none';
-      menuButtonImage.src = 'images/icon-hamburger.svg';
-      menuButton.setAttribute('aria-expanded', 'false');
+      hideMenu();
     }
   });
 });
